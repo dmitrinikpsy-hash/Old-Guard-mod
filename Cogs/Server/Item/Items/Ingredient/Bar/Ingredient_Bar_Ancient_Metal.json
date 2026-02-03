@@ -1,0 +1,62 @@
+{
+  "TranslationProperties": {
+    "Name": "Cogs.items.Ingredient_Ancient_Metal.name",
+    "Description": "Cogs.items.Ingredient_Ancient_Metal.description"
+  },
+  "Categories": [
+    "Items"
+  ],
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Robo_Bear_Heart",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Processing",
+        "Id": "Furnace"
+      }
+    ],
+    "OutputQuantity": 1,
+    "TimeSeconds": 5,
+    "Output": [
+      {
+        "ItemId": "Ingredient_Bar_Ancient_Metal",
+        "Quantity": 10
+      }
+    ]
+  },
+  "Model": "Resources/Materials/Ingot.blockymodel",
+  "Texture": "Resources/Ingredients/Bars/Ancient_Metal.png",
+  "Icon": "Icons/ItemsGenerated/Ingredient_Bar_Ancient_Metal.png",
+  "ResourceTypes": [
+    {
+      "Id": "Metal_Bars"
+    }
+  ],
+  "PlayerAnimationsId": "Item",
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -3
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ]
+  },
+  "ItemEntity": {
+    "ParticleSystemId": null
+  },
+  "ItemSoundSetId": "ISS_Items_Ingots",
+  "DropOnDeath": true
+}

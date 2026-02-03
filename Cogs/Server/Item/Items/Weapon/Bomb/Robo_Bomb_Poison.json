@@ -1,0 +1,64 @@
+{
+  "TranslationProperties": {
+    "Name": "Cogs.items.Robo_Bomb_Poison.name",
+    "Description": "Cogs.items.Robo_Bomb_Poison.description"
+  },
+  "Categories": [
+    "Items.Weapons"
+  ],
+  "Quality": "Uncommon",
+  "ItemLevel": 20,
+  "PlayerAnimationsId": "Item",
+  "Interactions": {
+    "Primary": {
+      "Interactions": [
+        "Robo_Bomb_Throw_Poison"
+      ]
+    }
+  },
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      4.685,
+      6.935,
+      315
+    ],
+    "Translation": [
+      -5,
+      -4
+    ]
+  },
+  "Model": "Resources/Weapons/Bombs/Grenade/Grenade.blockymodel",
+  "Texture": "Resources/Weapons/Bombs/Grenade/grenade_texture_green.png",
+  "Icon": "Icons/ItemsGenerated/Robo_Bomb_Poison.png",
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Bomb"
+    ]
+  },
+  "Weapon": {},
+  "SoundEventId": "SFX_Bomb_Fuse",
+  "MaxStack": 10,
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Ancient_Metal"
+      },
+      {
+        "ItemId": "Ingredient_Life_Essence",
+        "Quantity": 3
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Alchemybench",
+        "Categories": [
+          "Alchemy_Bombs"
+        ]
+      }
+    ]
+  }
+}

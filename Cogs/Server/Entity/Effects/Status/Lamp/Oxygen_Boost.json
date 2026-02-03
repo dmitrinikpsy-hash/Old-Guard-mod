@@ -1,0 +1,14 @@
+{
+  "Duration": 180,
+  "OverlapBehavior": "Overwrite",
+  "StatusEffectIcon": "UI/StatusEffects/Robo/oxygen.png",
+  "ValueType": "Percent",
+  "RawStatModifiers": {
+    "Oxygen": [
+      {
+        "CalculationType": "Additive",
+        "Amount": 100
+      }
+    ]
+  }
+}

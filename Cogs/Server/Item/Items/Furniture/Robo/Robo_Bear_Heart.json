@@ -1,0 +1,105 @@
+{
+  "TranslationProperties": {
+    "Name": "Cogs.items.Robo_Bear_Hearth.name",
+    "Description": "Cogs.items.Robo_Bear_Hearth.description"
+  },
+  "ItemLevel": 10,
+  "Categories": [
+    "Furniture.Furniture"
+  ],
+  "Set": "",
+  "PlayerAnimationsId": "Block",
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        {
+          "Parent": "Half_Block",
+          "Matchers": [
+            {
+              "Block": {
+                "Id": "Soil_Gravel_Sand_Half",
+                "State": "default"
+              },
+              "Face": "Up",
+              "StaticFace": false
+            }
+          ]
+        }
+      ],
+      "Cooldown": {
+        "Id": "BlockInteraction",
+        "Cooldown": 0.3,
+        "ClickBypass": true
+      },
+      "Settings": {
+        "Creative": {
+          "AllowSkipChainOnClick": true
+        }
+      }
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Resources/Furniture/Bear Heart/bear_heart.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Furniture/Bear Heart/heart_texture.png",
+        "Weight": 1
+      }
+    ],
+    "BlockParticleSetId": "Crystal",
+    "ParticleColor": "#db890b",
+    "Light": {
+      "Color": "#a50",
+      "Radius": 1
+    },
+    "CustomModelAnimation": "Resources/Furniture/Bear Heart/idol.blockyanim",
+    "Opacity": "Solid",
+    "CustomModelScale": 1.2,
+    "HitboxType": "Potion",
+    "Looping": true,
+    "SupportDropType": "Break",
+    "Gathering": {
+      "Soft": {}
+    },
+    "VariantRotation": "DoublePipe"
+  },
+  "Tags": {
+    "Type": [
+      "Soil"
+    ],
+    "Family": [
+      "Sand"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 1.1,
+    "Rotation": [
+      335,
+      127.7,
+      29.8
+    ],
+    "Translation": [
+      -1,
+      -6
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Robo_Bear_Heart.png",
+  "ItemSoundSetId": "ISS_Items_Ingots",
+  "Quality": "Uncommon",
+  "Model": "Resources/Furniture/Bear Heart/bear_heart.blockymodel",
+  "Texture": "Resources/Furniture/Bear Heart/heart_texture.png",
+  "Animation": "Resources/Furniture/Bear Heart/idol.blockyanim",
+  "Particles": [
+    {
+      "Color": "#fc0000",
+      "SystemId": "Torch_Fire"
+    }
+  ],
+  "DropOnDeath": true,
+  "Light": {
+    "Color": "#b71",
+    "Radius": 2
+  }
+}

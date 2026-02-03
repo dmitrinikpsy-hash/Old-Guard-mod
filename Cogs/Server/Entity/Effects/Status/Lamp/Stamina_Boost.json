@@ -1,0 +1,15 @@
+{
+  "RawStatModifiers": {
+    "Stamina": [
+      {
+        "Amount": 5,
+        "CalculationType": "Additive",
+        "Target": "Max"
+      }
+    ]
+  },
+  "Duration": 180,
+  "OverlapBehavior": "Overwrite",
+  "StatusEffectIcon": "UI/StatusEffects/Stamina/Medium.png",
+  "ValueType": "Percent"
+}

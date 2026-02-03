@@ -1,0 +1,207 @@
+{
+  "Parent": "Template_Weapon_Mace",
+  "TranslationProperties": {
+    "Name": "Cogs.weapons.Robo_Bear_Paw.name",
+    "Description": "Cogs.weapons.Robo_Bear_Paw.description"
+  },
+  "Model": "Resources/Weapons/Robo_Bear_Paw/bear_paw.blockymodel",
+  "Texture": "Resources/Weapons/Robo_Bear_Paw/bear_paw_texture.png",
+  "Icon": "Icons/ItemsGenerated/Robo_Bear_Paw.png",
+  "Quality": "Rare",
+  "ItemLevel": 40,
+  "Recipe": {
+    "TimeSeconds": 4.5,
+    "KnowledgeRequired": false,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Ancient_Metal",
+        "Quantity": 7
+      },
+      {
+        "ItemId": "Ingredient_Leather_Heavy",
+        "Quantity": 5
+      },
+      {
+        "ItemId": "Robo_Bear_Heart",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Weapon_Mace"
+        ],
+        "Id": "Weapon_Bench",
+        "RequiredTierLevel": 2
+      },
+      {
+        "Type": "DiagramCrafting",
+        "Categories": [
+          "Weapons.Mace"
+        ],
+        "Id": "Armory"
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 45
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 45
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Up_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Up_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 45
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Left_Charged_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Left_Charged_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 65
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Right_Charged_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Right_Charged_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 65
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Up_Left_Charged_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Up_Left_Charged_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 65
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Groundslam_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Signature_Groundslam_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 146
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 15.56,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 180,
+  "DurabilityLossOnHit": 0.5,
+  "IconProperties": {
+    "Scale": 0.2,
+    "Rotation": [
+      59,
+      101,
+      331
+    ],
+    "Translation": [
+      -23,
+      -24
+    ]
+  },
+  "Animation": "Resources/Weapons/Robo_Bear_Paw/idle_paw_animation.blockyanim",
+  "Scale": 0.8
+}

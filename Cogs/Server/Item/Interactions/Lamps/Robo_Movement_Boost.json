@@ -1,0 +1,32 @@
+{
+  "Type": "Simple",
+  "Effects": {
+    "ItemPlayerAnimationsId": "Feran_Staff",
+    "ItemAnimationId": "CastSummon",
+    "Particles": [
+      {
+        "SystemId": "Block_Break_Crystal",
+        "Color": "#e0bb31",
+        "TargetEntityPart": "Entity",
+        "Scale": 2
+      }
+    ],
+    "FirstPersonParticles": [
+      {
+        "SystemId": "Block_Break_Crystal",
+        "Color": "#e0bb31",
+        "Scale": 0.2,
+        "TargetEntityPart": "Entity",
+        "TargetNodeName": "Head"
+      }
+    ],
+    "WorldSoundEventId": "SFX_Arcane_Workbench_Craft",
+    "LocalSoundEventId": "SFX_Arcane_Workbench_Craft"
+  },
+  "$Comment": "Prepare Delay",
+  "RunTime": 1,
+  "Next": {
+    "Type": "ApplyEffect",
+    "EffectId": "Movement_Boost"
+  }
+}

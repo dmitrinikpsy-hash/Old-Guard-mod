@@ -1,0 +1,9 @@
+{
+  "Duration": 180,
+  "OverlapBehavior": "Overwrite",
+  "StatusEffectIcon": "UI/StatusEffects/Robo/movement_boost.png",
+  "ValueType": "Percent",
+  "ApplicationEffects": {
+    "HorizontalSpeedMultiplier": 2
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "Type": "Serial",
+  "Interactions": [
+    {
+      "Type": "Simple",
+      "RunTime": 0.25,
+      "Effects": {
+        "ItemAnimationId": "Throw"
+      }
+    },
+    {
+      "Type": "Projectile",
+      "Config": "Projectile_Config_Robo_Bomb_Frost",
+      "Next": {
+        "Type": "Simple",
+        "RunTime": 0.2
+      }
+    },
+    {
+      "Type": "ModifyInventory",
+      "ItemToRemove": {
+        "Id": "Robo_Bomb_Frost",
+        "Quantity": 1
+      }
+    }
+  ]
+}

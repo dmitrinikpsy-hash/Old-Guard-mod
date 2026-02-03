@@ -1,0 +1,112 @@
+{
+  "TranslationProperties": {
+    "Name": "Cogs.items.Robo_Lamp_Oxygen_Boost.name",
+    "Description": "Cogs.items.Robo_Lamp_Oxygen_Boost.description"
+  },
+  "PlayerAnimationsId": "Torch",
+  "Categories": [
+    "Furniture.Lighting"
+  ],
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Ancient_Metal",
+        "Quantity": 5
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Cyan",
+        "Quantity": 3
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Workbench",
+        "Categories": [
+          "Workbench_Tinkering"
+        ]
+      }
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Robo_Lamp_Oxygen.png",
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      25,
+      45,
+      22.5
+    ],
+    "Translation": [
+      1,
+      -16
+    ]
+  },
+  "InteractionConfig": {
+    "Priorities": {
+      "Secondary": {
+        "MainHand": 1,
+        "OffHand": -1
+      }
+    }
+  },
+  "Interactions": {
+    "Primary": "Root_Unarmed_Attack_Swing_Left",
+    "Secondary": "Block_Secondary"
+  },
+  "InteractionVars": {
+    "Torch_Swing_Left_Effect": "Torch_Swing_Left_Effect",
+    "Torch_Swing_Right_Effect": "Torch_Swing_Right_Effect",
+    "Torch_Swing_Left_Damage": "Torch_Swing_Left_Damage",
+    "Torch_Swing_Right_Damage": "Torch_Swing_Right_Damage"
+  },
+  "BlockType": {
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Resources/Furniture/Lamps/Lamp.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Weight": 1,
+        "Texture": "Resources/Furniture/Lamps/lamp_texture_blue2.png"
+      }
+    ],
+    "Light": {
+      "Radius": 0,
+      "Color": "#299"
+    },
+    "Flags": {},
+    "Gathering": {
+      "Soft": {
+        "IsWeaponBreakable": false
+      }
+    },
+    "BlockParticleSetId": "Crystal",
+    "MovementSettings": {},
+    "Material": "Solid",
+    "Interactions": {
+      "Use": {
+        "Interactions": [
+          "Robo_Oxygen_Boost"
+        ]
+      }
+    },
+    "Looping": true,
+    "CustomModelScale": 0.8,
+    "CustomModelAnimation": "Resources/Furniture/Lamps/Idle.blockyanim",
+    "ParticleColor": "#a76f11",
+    "VariantRotation": "DoublePipe",
+    "InteractionHint": "Use to increase oxygen supply"
+  },
+  "Scale": 1.5,
+  "Utility": {
+    "Usable": true
+  },
+  "Tags": {
+    "Type": [
+      "Furniture"
+    ],
+    "Family": [
+      "Feran"
+    ]
+  },
+  "Quality": "Rare"
+}

@@ -1,0 +1,81 @@
+{
+  "TranslationProperties": {
+    "Name": "Cogs.am.Base.name"
+  },
+  "Icon": "Icons/ItemsGenerated/Ancient_Metal_Stripe.png",
+  "Categories": [
+    "Blocks.Rocks"
+  ],
+  "PlayerAnimationsId": "Block",
+  "Set": "Soil_Clay",
+  "ItemLevel": 75,
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Soil_Clay",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Bar_Ancient_Metal",
+        "Quantity": 1
+      }
+    ],
+    "OutputQuantity": 2,
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Furniture_Bench",
+        "Categories": [
+          "Furniture_Pottery"
+        ]
+      }
+    ]
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Cube",
+    "Group": "Stone",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "ParticleColor": "#212121",
+    "BlockParticleSetId": "Stone",
+    "Textures": [
+      {
+        "Weight": 1,
+        "Up": "Resources/Blocks/Ancient_Metal/Used/stripe (2).png",
+        "Sides": "Resources/Blocks/Ancient_Metal/Used/stripes (2).png"
+      }
+    ],
+    "BlockSoundSetId": "Dirt"
+  },
+  "ResourceTypes": [
+    {
+      "Id": "Clays"
+    }
+  ],
+  "Tags": {
+    "Type": [
+      "Soil"
+    ],
+    "Family": [
+      "Clay"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Soft"
+}

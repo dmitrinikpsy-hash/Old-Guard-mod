@@ -1,0 +1,25 @@
+{
+  "Group": "Old_Guard_Core",
+  "Name": "Old Guard",
+  "Version": "1.0.0",
+  "Description": "New enemy, mount, weapons and more...",
+  "Authors": [
+    {
+      "Name": "Dmenik",
+      "Email": "",
+      "Url": ""
+    },
+    {
+      "Name": "SBWCart",
+      "Email": "",
+      "Url": ""
+    }
+  ],
+  "Website": "",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": false,
+  "SubPlugins": []
+}

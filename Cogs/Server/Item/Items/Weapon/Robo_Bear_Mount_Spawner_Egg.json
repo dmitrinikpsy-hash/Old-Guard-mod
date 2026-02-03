@@ -1,0 +1,67 @@
+{
+  "TranslationProperties": {
+    "Name": "Cogs.items.Robo_Bear_Spawn_Egg.name",
+    "Description": "Cogs.items.Robo_Bear_Spawn_Egg.description"
+  },
+  "Quality": "Epic",
+  "PlayerAnimationsId": "Item",
+  "Interactions": {
+    "Primary": {
+      "Interactions": [
+        {
+          "Type": "SpawnNPC",
+          "EntityId": "Robo_Bear_Mount",
+          "Next": {
+            "Type": "ModifyInventory",
+            "AdjustHeldItemQuantity": -1
+          },
+          "SpawnOffset": {
+            "X": 0,
+            "Y": 0.5,
+            "Z": 0
+          }
+        }
+      ]
+    }
+  },
+  "Model": "Resources/Items/Consumables/Robo_Bear_Spawn_Egg/summoner_bear.blockymodel",
+  "Texture": "Resources/Items/Consumables/Robo_Bear_Spawn_Egg/summoner_bear_texture.png",
+  "Icon": "Icons/ItemsGenerated/Robo_Bear_Mount_Spawner_Egg.png",
+  "IconProperties": {
+    "Scale": 1.1,
+    "Rotation": [
+      0,
+      294,
+      22.5
+    ],
+    "Translation": [
+      2,
+      -6
+    ]
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Robo_Bear_Heart",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Charcoal",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Bar_Ancient_Metal",
+        "Quantity": 2
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Categories": [
+          "Arcane_Misc"
+        ]
+      }
+    ]
+  },
+  "Scale": 1.5
+}

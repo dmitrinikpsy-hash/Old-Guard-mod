@@ -1,0 +1,121 @@
+{
+  "TranslationProperties": {
+    "Name": "Cogs.items.Robo_Bear_Paw_Deco.name",
+    "Description": "Cogs.items.Robo_Bear_Paw_Deco.description"
+  },
+  "ItemLevel": 10,
+  "Categories": [
+    "Furniture.Furniture"
+  ],
+  "Set": "",
+  "PlayerAnimationsId": "Block",
+  "Interactions": {
+    "Secondary": {
+      "Interactions": [
+        {
+          "Parent": "Half_Block",
+          "Matchers": [
+            {
+              "Block": {
+                "Id": "Soil_Gravel_Sand_Half",
+                "State": "default"
+              },
+              "Face": "Up",
+              "StaticFace": false
+            }
+          ]
+        }
+      ],
+      "Cooldown": {
+        "Id": "BlockInteraction",
+        "Cooldown": 0.3,
+        "ClickBypass": true
+      },
+      "Settings": {
+        "Creative": {
+          "AllowSkipChainOnClick": true
+        }
+      }
+    }
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "CustomModel": "Resources/Furniture/Robo Bear Paw Deco/bear_paw_deco.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Furniture/Robo Bear Paw Deco/bear_paw_texture.png",
+        "Weight": 1
+      }
+    ],
+    "BlockParticleSetId": "Crystal",
+    "ParticleColor": "#db890b",
+    "Light": {
+      "Color": "#a50",
+      "Radius": 1
+    },
+    "CustomModelAnimation": "Resources/Furniture/Robo Bear Paw Deco/idle_paw_animation.blockyanim",
+    "Opacity": "Solid",
+    "CustomModelScale": 0.6,
+    "HitboxType": "Statue_Small",
+    "Looping": true,
+    "SupportDropType": "Break",
+    "Gathering": {
+      "Soft": {}
+    },
+    "VariantRotation": "Pipe"
+  },
+  "Tags": {
+    "Type": [
+      "Soil"
+    ],
+    "Family": [
+      "Sand"
+    ]
+  },
+  "IconProperties": {
+    "Scale": 0.2,
+    "Rotation": [
+      301,
+      127.7,
+      29.8
+    ],
+    "Translation": [
+      -1,
+      -35
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Robo_Bear_Paw_Deco.png",
+  "ItemSoundSetId": "ISS_Items_Ingots",
+  "Quality": "Uncommon",
+  "Model": "Resources/Furniture/Robo Bear Paw Deco/bear_paw_deco.blockymodel",
+  "Texture": "Resources/Furniture/Robo Bear Paw Deco/bear_paw_texture.png",
+  "Animation": "Resources/Furniture/Robo Bear Paw Deco/idle_paw_animation.blockyanim",
+  "Particles": [
+    {
+      "Color": "#fc0000",
+      "SystemId": "Torch_Fire"
+    }
+  ],
+  "DropOnDeath": true,
+  "Light": {
+    "Color": "#b71",
+    "Radius": 2
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Ancient_Metal",
+        "Quantity": 4
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Furniture_Bench",
+        "Categories": [
+          "Furniture_Misc"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Interactions": [
+    {
+      "Type": "Chaining",
+      "ChainId": "Slashes",
+      "ChainingAllowance": 15,
+      "Next": [
+        "Robo_Bear_Swipe_Left",
+        "Robo_Bear_Swipe_Right",
+        "Robo_Bear_Stomp"
+      ]
+    }
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

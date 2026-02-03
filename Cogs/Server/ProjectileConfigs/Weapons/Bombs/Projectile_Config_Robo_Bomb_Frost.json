@@ -1,0 +1,36 @@
+{
+  "Parent": "Projectile_Config_Bomb_Base",
+  "Interactions": {
+    "ProjectileSpawn": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "RunTime": 2
+        },
+        "Robo_Bomb_Explode"
+      ]
+    },
+    "ProjectileHit": {
+      "Cooldown": {
+        "Cooldown": 0
+      },
+      "Rules": {
+        "Interrupting": [
+          "ProjectileSpawn"
+        ]
+      },
+      "Interactions": [
+        "Robo_Bomb_Explode_Frost",
+        {
+          "Type": "RemoveEntity",
+          "Entity": "User",
+          "Effects": {
+            "WorldSoundEventId": "SFX_Goblin_Lobber_Bomb_Death",
+            "LocalSoundEventId": "SFX_Goblin_Lobber_Bomb_Death"
+          }
+        }
+      ]
+    }
+  },
+  "Model": "Robo_Grenade_Ice"
+}

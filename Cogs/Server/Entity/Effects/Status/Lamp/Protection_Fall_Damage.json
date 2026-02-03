@@ -1,0 +1,15 @@
+{
+  "Duration": 180,
+  "OverlapBehavior": "Overwrite",
+  "StatusEffectIcon": "UI/StatusEffects/Robo/fall_protection.png",
+  "ValueType": "Percent",
+  "DamageResistance": {
+    "Fall": [
+      {
+        "CalculationType": "Additive",
+        "Amount": 100000,
+        "Target": "Min"
+      }
+    ]
+  }
+}
