@@ -20,7 +20,7 @@
         "Quantity": 1
       }
     ],
-    "OutputQuantity": 2,
+    "OutputQuantity": 4,
     "BenchRequirement": [
       {
         "Type": "Crafting",
@@ -47,7 +47,8 @@
       {
         "Weight": 1,
         "Up": "Resources/Blocks/Ancient_Metal/Used/stripe (2).png",
-        "Sides": "Resources/Blocks/Ancient_Metal/Used/stripes (2).png"
+        "Sides": "Resources/Blocks/Ancient_Metal/Used/stripes (2).png",
+        "Down": "Resources/Blocks/Ancient_Metal/Used/stripe (2).png"
       }
     ],
     "BlockSoundSetId": "Dirt"
